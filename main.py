@@ -53,7 +53,10 @@ def UploadAction(event=None):
     color_label5.place(x=1000, y=600)
 
 
+def test():
+    get_colors("./test_pic1.jpg")
 
 if __name__ == '__main__':
-    root = class1()
-    root.mainloop()
+#    root = class1()
+#    root.mainloop()
+    test()

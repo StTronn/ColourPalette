@@ -50,6 +50,7 @@ class KMeans():
     def fit(self, points):
         clusters = [Cluster(center=p, points=[p]) for p in random.sample(points, self.n_clusters)]
         for i in range(self.max_iteration):
+            print("iteration"+str(i))
             plists = self.assign_points(clusters, points)
             diff = 0
 
